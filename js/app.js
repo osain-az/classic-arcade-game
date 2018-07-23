@@ -1,3 +1,4 @@
+"use strict";
 // Enemies our player must avoid
 var Enemy = function() {
     // Variables applied to each of our instances go here,
@@ -86,11 +87,10 @@ class Player {
                 this.y = 416;
                 this.x = 203;
                 score -= 10;
-                gem_update();
 
-                display();
             }
         }
+        display();
         // TODO: update when the player reaches the water:
         if (this.y == 1) {
             this.y = 416;
@@ -101,6 +101,7 @@ class Player {
 
         }
     }
+
 }
 
 class Gem {
@@ -127,7 +128,7 @@ class Gem {
     }
 }
 
-class Winner {
+/*class Winner {
     constructor () {
        this.modal = document.getElementById('modal');
        this.page = document.getElementById('container');
@@ -135,9 +136,11 @@ class Winner {
     }
 
 
-}
+}*/
+
+
 /*function modalMain() {
-  if (score >= 40 && water >= 0) {
+  if (score >= 100 && water >= 5) {
     alert("testing");
 
   }
