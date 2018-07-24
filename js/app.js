@@ -114,6 +114,7 @@ class Gem {
 
     update() {
         // update when the player collects the gem
+        modalMain();
         if (player.x < this.x+45 && player.x > this.x-45 && player.y == this.y+20 && player.y == this.y+20) {
             this.x = -1000;
             score+= 10;
@@ -138,15 +139,29 @@ class Gem {
 
 }*/
 
+var canvas =  document.getElementById('canvas');
+var modalFrame = document.getElementById('modalFrame');
+var playAgain = document.getElementById('button');
+var score_water = document.getElementById('score_water');
+var scores = document.getElementById('score');
 
-/*function modalMain() {
+function modalMain() {
   if (score >= 100 && water >= 5) {
-    alert("testing");
+    canvas.style.display = "none";
+    modalFrame.style.display = "block";
+    score_water.textContent = water;
+    scores.textContent = score;
+
+    playAgain.document.addEventListener("click", startAgain);
 
   }
-
 }
-modalMain();*/
+function startAgain() {
+alert("test");
+}
+
+
+
 
 var speed = [200, 500];
 var array = [64, 147, 230];
