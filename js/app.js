@@ -37,7 +37,7 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-class Player {
+class Player   {
     constructor () {
 
         this.image = 'images/char-boy.png';
@@ -152,17 +152,37 @@ function modalMain() {
     score_water.textContent = water;
     scores.textContent = score;
 
-    playAgain.document.addEventListener("click", startAgain);
+
 
   }
 }
-function startAgain() {
-alert("test");
+
+playAgain.addEventListener("click", function () {
+  modalFrame.style.backgroundColor = "red";
+  showModal();
+
+
+});
+
+function showModal() {
+
+  if (canvas.style.display = "none") {
+    canvas.style.display = "block";
+    modalFrame.style.display = "none";
+
+  }
+
 }
 
 
 
+/*function startAgain() {
 
+modalFrame.style.display = "none";
+alert("this is test");
+
+}
+*/
 var speed = [200, 500];
 var array = [64, 147, 230];
 var xarray = [1, 102, 203, 304, 405];
