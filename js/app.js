@@ -166,7 +166,7 @@ playAgain.addEventListener("click", function () {
 
 function showModal() {
 
-  if (canvas.style.display = "none") {
+  if (canvas.style.display == "none") {
     canvas.style.display = "block";
     modalFrame.style.display = "none";
 
