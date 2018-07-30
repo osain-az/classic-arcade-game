@@ -1,5 +1,7 @@
+<h1>Classic  Arcade game</h1>
+<p>Arcade is a game that consiting of a Player and a Enemy, water  and Gems.
+To play the game you need navigate the player to avoid touching the enemy until it gets to the water line  to earn 20 point,
+to earn more point you need to touch the gem. if get hit my the enemy you will lose 10 point </p>
 
-
-
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+<h2>How to play the game </h2>
+<p>To play the game, use the your keybaod key up , down , forward and backward key to control the player </p>
